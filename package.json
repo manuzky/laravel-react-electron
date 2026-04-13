@@ -11,7 +11,7 @@
     "dev": "vite",
     "start": "electron .",
     "web": "concurrently -k -n server,client \"php server/artisan serve\" \"cd client && npm run dev\"",
-    "build": "vite build",
+    "build": "cd client && npm run build",
     "predist": "npm run build",
     "dist": "electron-builder"
   },
@@ -21,22 +21,14 @@
     "directories": {
       "output": "dist"
     },
-    "asar": true,
-    "asarUnpack": [
-      "server/php/**/*"
-    ],
+    "asar": false,
     "compression": "maximum",
     "files": [
-      "mainElectron.js",
-      "server/**/*",
-      "client/build/**/*",
+      "mainElectron.cjs",
+      "client/dist/**/*",
       "package.json"
     ],
     "extraResources": [
-      {
-        "from": "server/php",
-        "to": "php"
-      },
       {
         "from": "server",
         "to": "app",
@@ -58,7 +50,15 @@
           "!tests",
           "!storage/logs/*"
         ]
-      }
+      },
+      {
+        "from": "server/php",
+        "to": "php"
+      },
+      {
+      "from": "client/dist",
+      "to": "client"
+     }
     ],
     "win": {
       "target": "nsis",

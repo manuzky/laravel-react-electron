@@ -193,7 +193,8 @@ app.whenReady().then(async () => {
     if (isDev) {
         createWindow('http://localhost:5173');
     } else {
-        createWindow(path.join(__dirname, 'client/build/index.html'));
+        const indexPath = path.join(process.resourcesPath, 'client', 'index.html');
+        createWindow(`file://${indexPath}`);
     }
 });
 
