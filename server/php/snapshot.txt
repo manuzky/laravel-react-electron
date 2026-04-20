@@ -1,9 +1,9 @@
 This snapshot was automatically generated on
-Tue, 10 Mar 2026 23:34:03 +0000
+Tue, 07 Apr 2026 19:29:17 +0000
 
-Version: 8.5.4
+Version: 8.5.5
 Branch: HEAD
-Build: C:\Users\runneradmin\AppData\Local\Temp\php-d5a1f146-b221-4290-a0d0-a550f4469e5b\config\vs17\x86\obj\Release
+Build: C:\Users\runneradmin\AppData\Local\Temp\php-6b087e2e-9d7f-4fe0-8a7c-ffb87d814c9e\config\vs17\x64\obj\Release_TS
 
 Built-in Extensions
 ===========================
@@ -46,18 +46,24 @@ zip
 Dependency information:
 Module: php_curl.dll
 ===========================
-	libcrypto-3.dll
-	libssl-3.dll
+	libcrypto-3-x64.dll
+	libssl-3-x64.dll
 	libssh2.dll
 	nghttp2.dll
+	brotlidec.dll
+	libzstd.dll
 
-Module: libssl-3.dll
+Module: libssl-3-x64.dll
 ===========================
-	libcrypto-3.dll
+	libcrypto-3-x64.dll
 
 Module: libssh2.dll
 ===========================
-	libcrypto-3.dll
+	libcrypto-3-x64.dll
+
+Module: brotlidec.dll
+===========================
+	brotlicommon.dll
 
 Module: php_enchant.dll
 ===========================
@@ -74,23 +80,23 @@ Module: gmodule-2.dll
 
 Module: php_ftp.dll
 ===========================
-	libcrypto-3.dll
-	libssl-3.dll
+	libcrypto-3-x64.dll
+	libssl-3-x64.dll
 
 Module: php_ldap.dll
 ===========================
 	libsasl.dll
-	libcrypto-3.dll
-	libssl-3.dll
+	libcrypto-3-x64.dll
+	libssl-3-x64.dll
 
 Module: libsasl.dll
 ===========================
-	libcrypto-3.dll
+	libcrypto-3-x64.dll
 
 Module: php_openssl.dll
 ===========================
-	libcrypto-3.dll
-	libssl-3.dll
+	libcrypto-3-x64.dll
+	libssl-3-x64.dll
 
 Module: php_sodium.dll
 ===========================
@@ -125,8 +131,8 @@ Module: php_pdo_pgsql.dll
 
 Module: libpq.dll
 ===========================
-	libssl-3.dll
-	libcrypto-3.dll
+	libssl-3-x64.dll
+	libcrypto-3-x64.dll
 
 Module: php_pdo_sqlite.dll
 ===========================
@@ -138,6 +144,6 @@ Module: php_pgsql.dll
 
 Module: php_snmp.dll
 ===========================
-	libcrypto-3.dll
-	libssl-3.dll
+	libcrypto-3-x64.dll
+	libssl-3-x64.dll
 
